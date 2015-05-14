@@ -1,0 +1,156 @@
+body{
+    background:url(images/paisley.png);
+    margin:0;
+    font-size:16px;
+    font-family:Verdana, Geneva, sans-serif
+}
+
+a{
+    color:red;
+}
+
+a:hover {
+    color:yellow;
+}
+
+h1{
+    color:brown;
+}
+
+/*layout
+--------------------------------------------*/
+
+header,
+footer,
+#container {
+    width:88%;
+    max-width:960px;
+    margin:0 auto;
+    border: 1px dashed mediumpurple;
+}
+
+#wrapper {
+    background:#ffffff;
+}
+
+/*navigation
+--------------------------------------------*/
+nav ul{
+    padding:0;
+}
+
+nav ul li {
+    float:left;
+    margin-right:.5em;
+    list-style:none;
+}
+
+nav ul li a {
+    background:grey;
+    text-decoration:none;
+    padding:.5em 1em;
+    border-radius:15px;
+    -o-transition:all 1s ease-in-out;
+    -moz-transition:all 1s ease-in-out;
+    -webkit-transition:all 1s ease-in-out;
+    transition:all 1s ease-in-out;
+
+}
+
+nav ul li a:hover {
+    background:pink;
+}
+/*Floats
+--------------------------------------------*/
+.align-right {
+float:right;
+    margin:.5em 0 .5em .5em;
+}
+.align-left {
+    float:left;
+    margin: .5em .5em .5em 0;
+}
+.align-center {
+    margin:1em auto;
+    display:block;
+}
+/*Transform
+--------------------------------------------*/
+.transform{
+    transition:all 1s ease-in-out;
+}
+.transform:hover {
+    /*transform:rotate(-10deg);*/
+    /*transform:scale(.8);*/
+    transform:skewX(20deg);
+}
+
+/* Gallery
+------------------------------------------*/
+.gallery {
+    padding:0;
+
+}
+.gallery li{
+    float:left;
+    margin :.7em 1em 0 0;
+    list-style:none
+
+}
+
+.gallery img {
+    border: 3px solid peachpuff;
+}
+
+.gallery img:hover {
+    border: 3px solid darkturquoise;
+}
+.gallery li div.item{
+    position:relative;
+    overflow:hidden;
+}
+.gallery img {
+    display:block;
+}
+
+.gallery li div.item span {
+    text-align:center;
+    position:absolute;
+    bottom:-50px;
+    left:0;
+    background:rgba(250,250,250,0.8);
+    width:100%;
+    padding:.7em 0 1.2em 0;
+    transition:1s all ease-in-out;
+}
+
+.gallery li div.item:hover span {
+    bottom: 0;
+}
+/* Misc.
+------------------------------------------*/
+
+.clearfix:after {
+    content:".";
+    display:block;
+    height: 0;
+    clear:both;
+    visibility:hidden;
+}
+
+@media screen and (min-width:600px) {
+
+    main {
+        width :60%;
+        float:left;
+    }
+
+    #secondary {
+        width:36%;
+        float:right;
+        border-radius:5px;
+        padding:.5em;
+        border:1px dotted red;
+        margin-top:1em 0;
+    }
+}
